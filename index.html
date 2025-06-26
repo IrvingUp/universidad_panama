@@ -3,25 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adopta una Mascota</title>
+  <title>AdoptaConAmor</title>
   <link rel="stylesheet" href="parcial_2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="img/logo.png" alt="Logo Adopción">
+<div class="logo">
+  <img src="archivos/logo.png" alt="Logo" class="logo-icono">
+  <span class="logo-texto">Logo Adopción</span>
+</div>
+
     <nav>
-      <a href="parcial_2.html">Inicio</a>
+      <a href="index.html">Inicio</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="adopta.html">Adopta</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h1>Bienvenido a Adopta una Mascota</h1>
-      <p>Conectamos mascotas sin hogar con personas dispuestas a brindarles amor.</p>
-      <img src="archivos/imagen_principal.png" alt="Mascotas felices">
+    <section class="hero">
+      <div class="texto-hero">
+        <h1>Ellos te esperan...<br>¡Adopta con amor!</h1>
+        <a href="adopta.html" class="btn-verde">Ver mascotas disponibles</a>
+      </div>
+      <div class="imagen-hero">
+        <img src="archivos/imagen_principal.png" alt="Mascotas felices">
+      </div>
     </section>
+
+    <section class="mascotas-preview">
+  <h2>Mascotas en adopción</h2>
+  <div class="cards-contenedor">
+    <div class="card">
+      <img src="archivos/icono_perro.png" alt="Toby">
+      <h3>Toby</h3>
+      <p>Edad: 2 años<br>Ciudad</p>
+      <a href="adopta.html" class="btn-verde">¡Adóptame!</a>
+    </div>
+    <div class="card">
+      <img src="archivos/icono_gato.png" alt="Otat">
+      <h3>O tat</h3>
+      <p>Edad: 2 años<br>Ciudad</p>
+      <a href="adopta.html" class="btn-verde">¡Adóptame!</a>
+    </div>
+    <div class="card">
+      <img src="archivos/icono_perro2.png" alt="Rocky">
+      <h3>Rocky</h3>
+      <p>Edad: 2 años<br>Ciudad</p>
+      <a href="adopta.html" class="btn-verde">¡Adóptame!</a>
+    </div>
+  </div>
+</section>
+<section class="como-adoptar">
+  <h2>¿Cómo adoptar?</h2>
+  <div class="pasos-adopcion">
+    <div class="paso">
+      <img src="archivos/check.png" alt="Formulario">
+      <p>Llenar formulario</p>
+    </div>
+    <div class="paso">
+      <img src="archivos/telefono.png" alt="Entrevista">
+      <p>Entrevista</p>
+    </div>
+    <div class="paso">
+      <img src="archivos/casa.png" alt="Entrega">
+      <p>Entrega de mascota</p>
+    </div>
+  </div>
+</section>
+
+<section class="historias-contacto">
+  <div class="historias">
+    <h3>Historias Felices</h3>
+    <blockquote>“Adopté a Lili y ahora es parte de la familia 🐾”</blockquote>
+  </div>
+  <form class="formulario-contacto">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Correo" required>
+    <textarea placeholder="Mensaje" required></textarea>
+    <button type="submit" class="btn-verde">Enviar</button>
+  </form>
+</section>
+
+
   </main>
 
   <footer>
