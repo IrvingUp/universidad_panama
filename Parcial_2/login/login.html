@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - AdoptaConAmor</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">🐾 AdoptaConAmor</h1>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Mascotas</a></li>
+        <li><a href="#">Cómo Adoptar</a></li>
+        <li><a href="#">Historias Felices</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="login-container">
+    <form id="loginForm" class="login-card">
+      <h2>Iniciar Sesión</h2>
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Ingresar</button>
+      <p class="registro-texto">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+    </form>
+  </main>
+
+  <!-- ✅ Solo llamas login.js como módulo -->
+  <script type="module" src="login.js"></script>
+</body>
+</html>
