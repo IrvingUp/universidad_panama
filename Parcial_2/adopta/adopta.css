@@ -1,0 +1,112 @@
+/* Estilos del encabezado (header) */
+header {
+  background-color: #fff1f1;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.logo-icono {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+nav a {
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de la página Adopta */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fffdfd;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+.mascotas {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.cards-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #ffeef3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 0.95em;
+}
+
+.btn-verde {
+  background-color: #c1e5cd;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
