@@ -27,8 +27,8 @@ loginForm.addEventListener("submit", (e) => {
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
-      alert("Inicio de sesión exitoso: " + user.email);
-      // Redirige si deseas: window.location.href = "inicio.html";
+      //alert("Inicio de sesión exitoso: " + user.email);
+      window.location.href = "../../../index.html"; // Redirige a inicio.html
     })
     .catch((error) => {
       alert("Error: " + error.message);

@@ -1,0 +1,73 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background-color: #fff6f4;
+}
+
+header {
+  background-color: #ffe2e0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-header img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+form h2 {
+  text-align: center;
+  color: #e57373;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #e0b4b4;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #f48fb1;
+}
+
+.btn-enviar {
+  margin-top: 20px;
+  background: linear-gradient(to right, #f06292, #f48fb1);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: linear-gradient(to right, #ec407a, #f06292);
+}

@@ -58,26 +58,40 @@ body {
 
 .login-card input {
   width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
+  padding: 0.7rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ffd6d6;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  color: #333;
+  transition: border 0.2s;
+}
+
+.login-card input:focus {
+  border-color: #e57373;
+  background: #fff6f6;
 }
 
 .login-card button {
-  width: 100%;
-  padding: 0.7rem;
-  margin-top: 1.5rem;
-  background-color: #aad7c2;
-  color: black;
-  font-weight: bold;
+  background: linear-gradient(90deg, #e57373 60%, #ffd6d6 100%);
+  color: #fff;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(229,115,115,0.08);
 }
 
 .login-card button:hover {
-  background-color: #97cbb2;
+  background: linear-gradient(90deg, #d32f2f 60%, #ffd6d6 100%);
+  transform: translateY(-2px) scale(1.03);
 }
 
 .registro-texto {
