@@ -54,7 +54,7 @@ if (btnVerMascotas) {
     } else {
       // Usuario NO logueado, mostrar alerta con dos opciones
       if (confirm("Debes iniciar sesión para ver las mascotas disponibles.\n¿Deseas iniciar sesión ahora?")) {
-        window.location.href = "/Parcial_2/registro/registro.html";
+        window.location.href = "Parcial_2/registro/registro.html";
       } // Si cancela, se queda en index.html
     }
   });
