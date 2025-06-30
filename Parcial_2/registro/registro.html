@@ -4,27 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Registro - AdoptaConAmor</title>
-
+ <link rel="stylesheet" href="/parcial_2.css"/>
   <link rel="stylesheet" href="../login/login.css"> <!-- Reutiliza estilos del login -->
   <link rel="stylesheet" href="login.css"> <!-- Reutiliza estilos del login -->
   <link rel="stylesheet" href="registro.css"> <!-- Añade esta línea en el <head> -->
 </head>
 <body>
 
-<header>
-<div class="logo">
-  <a href="../../index.html" class="logo-link">
-  <img src="../../archivos/logo.png" alt="Logo" class="logo-icono">
-  <span class="logo-texto">Logo Adopción</span>
-</a>
-</div>
+  <!-- HEADER COPIADO DE index.html -->
+  <header>
+    <div class="contenedor-header">
+      <div class="logo" onclick="window.location.href='../../index.html'" style="cursor:pointer;">
+        <img src="../../archivos/logo.png" alt="Logo de Huellitas Home" class="logo-icono" />
+        <span class="logo-texto">Huellitas Home</span>
+      </div>
+<nav class="menu">
+  <a href="../../index.html">Inicio</a>
+  <a href="../nosotros/nosotros.html">Nosotros</a>
+  <a href="../adopta/adopta.html">Adopta</a>
+  <button class="btn-cerrar-sesion" onclick="window.location.href='../login/login.html'">Iniciar sesión</button>
+</nav>
 
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="Parcial_2/nosotros/nosotros.html">Nosotros</a>
-      <a href="Parcial_2/adopta/adopta.html">Adopta</a>
-    </nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
+
 
   <main class="login-container">
     <form id="registroForm" class="login-card">
@@ -57,5 +65,12 @@
   </main>
 
   <script type="module" src="registro.js"></script>
+
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('nav.menu');
+    menu.classList.toggle('menu-activo');
+  }
+</script>
 </body>
 </html>

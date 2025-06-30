@@ -3,101 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AdoptaConAmor</title>
+  <title>Huellitas Home</title>
   <link rel="stylesheet" href="parcial_2.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- ENCABEZADO -->
-  <header>
-    <div class="contenedor-header">
-      <!-- Logo y navegación -->
-      <div class="zona-izquierda">
-        <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
-          <img src="archivos/logo.png" alt="Logo de AdoptaConAmor" class="logo-icono">
-          <span class="logo-texto">Logo Adopción</span>
-        </div>
-
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="Parcial_2/nosotros/nosotros.html">Nosotros</a>
-          <a href="Parcial_2/adopta/adopta.html">Adopta</a>
-        </nav>
-      </div>
-
-      <!-- Usuario logueado y botón de cerrar sesión -->
-      <div class="usuario-sesion">
-        <p id="bienvenida" class="saludo-usuario"></p>
-        <button id="link-login" class="btn-cerrar-sesion" style="display: none;" onclick="window.location.href='Parcial_2/login/login.html'">Iniciar sesión</button>
-        <button id="cerrarSesion" class="btn-cerrar-sesion" style="display: none;">Cerrar sesión</button>
-      </div>
+<!-- ENCABEZADO -->
+<header>
+  <div class="contenedor-header">
+    <!-- LOGO -->
+    <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
+      <img src="archivos/logo.png" alt="Logo de AdoptaConAmor" class="logo-icono" />
+      <span class="logo-texto">Huellitas Home</span>
     </div>
-  </header>
+    <!-- NAV + BOTÓN juntos -->
+<nav class="menu">
+  <a href="index.html">Inicio</a>
+  <a href="Parcial_2/nosotros/nosotros.html">Nosotros</a>
+  <a href="Parcial_2/adopta/adopta.html">Adopta</a>
+  <span id="bienvenida" class="saludo-usuario"></span>
+  <button id="link-login" class="btn-cerrar-sesion" style="display: none;" onclick="window.location.href='Parcial_2/login/login.html'">Iniciar sesión</button>
+  <button id="cerrarSesion" class="btn-cerrar-sesion" style="display: none;">Cerrar sesión</button>
+</nav>
+
+    <!-- HAMBURGUESA solo visible en mobile -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</header>
+
 
   <!-- CUERPO PRINCIPAL -->
 <main>
   <section class="hero">
     <div class="texto-hero">
-      <h1>Encuentra a tu nuevo mejor amigo</h1>
-      <p>¡Adopta hoy y cambia tu vida para siempre!</p>
-      <a href="Parcial_2/adopta/adopta.html" class="btn-verde">Ver mascotas disponibles &gt;</a>
+      <h1>Ellos te estan esperando</h1>
+      <p>¡Adopta con amor!</p>
+      <a href="Parcial_2/adopta/adopta.html" class="btn-verde"> Ver mascotas</a>
     </div>
 
        <div class="imagen-hero">
       <div class="imagen-circular">
-        <img src="archivos/foto_principal.png" alt="Mascotas felices">
+        <img src="archivos/Body.png" alt="Mascotas felices">
       </div>
     </div>
-      <!-- Huellitas decorativas -->
-   <img class="patita patita1" src="archivos/patita1.png" alt="Huella 1">
-<img class="patita patita2" src="archivos/patita2.png" alt="Huella 2">
-<img class="patita patita3" src="archivos/patita3.png" alt="Huella 3">
-
-  </section>
-</main>
-
+ 
 
     <!-- Vista previa de mascotas -->
     <section class="mascotas-preview">
       <h2>Mascotas en adopción</h2>
+        <p class="subtexto-adopcion">
+    Todas estas mascotas están actualmente buscando una familia que les dé una oportunidad de ser adoptadas.
+  </p>
       <div class="cards-contenedor">
         <div class="card">
           <img src="archivos/mascotas/perro.png" alt="Toby el perro">
           <h3>Toby</h3>
           <p>Edad: 2 años<br>Ciudad</p>
-          <a href="Parcial_2/adopta/adopta.html" class="btn-verde">¡Adóptame!</a>
+          <a href="Parcial_2/formulario/form.html" class="btn-verde">¡Adóptame!</a>
         </div>
         <div class="card">
           <img src="archivos/mascotas/gato.png" alt="Otat el gato">
           <h3>Otat</h3>
           <p>Edad: 2 años<br>Ciudad</p>
-          <a href="Parcial_2/adopta/adopta.html" class="btn-verde">¡Adóptame!</a>
+          <a href="Parcial_2/formulario/form.html" class="btn-verde">¡Adóptame!</a>
         </div>
         <div class="card">
           <img src="archivos/mascotas/perro2.png" alt="Rocky el perro">
           <h3>Rocky</h3>
           <p>Edad: 2 años<br>Ciudad</p>
-          <a href="Parcial_2/adopta/adopta.html" class="btn-verde">¡Adóptame!</a>
+          <a href="Parcial_2/formulario/form.html" class="btn-verde">¡Adóptame!</a>
         </div>
       </div>
     </section>
 
-    <!-- Cómo adoptar -->
+<!-- Cómo adoptar -->
 <section class="como-adoptar">
   <h2>¿Cómo adoptar?</h2>
   <div class="pasos-adopcion">
     <div class="paso-horizontal">
       <img src="archivos/check.png" alt="Paso 1: Formulario">
-      <span>Llenar formulario</span>
+      <a href="Parcial_2/formulario/form.html" class="btn-verde">Llenar formulario</a>
     </div>
     <div class="paso-horizontal">
-      <img src="archivos/telefono.png" alt="Paso 2: Entrevista">
-      <span>Entrevista</span>
+      <img src="archivos/telefono.png" alt="Paso 2: Requisitos">
+      <a href="Parcial_2/requisitos/requisitos.html" class="btn-verde">Requisitos</a>
     </div>
     <div class="paso-horizontal">
       <img src="archivos/casa.png" alt="Paso 3: Entrega">
-      <span>Entrega de mascota</span>
+      <span class="texto-entrega">🐾 Entrega segura y con seguimiento</span>
     </div>
   </div>
 </section>
@@ -108,7 +107,9 @@
       <div class="historias">
         <h3>Historias Felices</h3>
         <blockquote>“Adopté a Lili y ahora es parte de la familia 🐾”</blockquote>
-      <blockquote>“Max ahora es mi nuevo compañero de vida adopta tu mascota 🐾”</blockquote>
+     <blockquote>“Max ahora es mi nuevo compañero de vida adopta tu mascota 🐾”</blockquote>
+<blockquote>“Desde que adoptamos a Luna, la casa está llena de alegría y amor 🐶💖”</blockquote>
+
       </div>
 
       <form class="formulario-contacto">
@@ -124,6 +125,7 @@
   <footer>
     <p>&copy; 2025 Adopta una Mascota</p>
   </footer>
+
 
   <!-- Script de Firebase -->
   <script type="module" src="parcial_2.js"></script>

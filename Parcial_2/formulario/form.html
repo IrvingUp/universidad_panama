@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Visita</title>
-  <link rel="stylesheet" href="form.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Adopción</title>
+ <link rel="stylesheet" href="/parcial_2.css" />
+<link rel="stylesheet" href="../formulario/form.css" />
+
 </head>
 <body>
-  <div class="form-container">
-    <h2>Solicitud de Visita o Adopción</h2>
-    <form id="formVisita">
-      <label for="nombre">Nombre completo:</label>
-      <input type="text" id="nombre" required>
-
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" id="telefono" required>
-
-      <label for="correo">Correo:</label>
-      <input type="email" id="correo" required>
-
-      <label for="direccion">¿Dónde vives?</label>
-      <input type="text" id="direccion" required>
-
-      <label>¿Primera vez adoptando una mascota?</label>
-      <div class="radio-group">
-        <label><input type="radio" name="primeraVez" value="Sí" required> Sí</label>
-        <label><input type="radio" name="primeraVez" value="No"> No</label>
+  <!-- HEADER COPIADO DE index.html -->
+  <header>
+    <div class="contenedor-header">
+      <div class="logo" onclick="window.location.href='../../index.html'" style="cursor:pointer;">
+        <img src="../../archivos/logo.png" alt="Logo de Huellitas Home" class="logo-icono" />
+        <span class="logo-texto">Huellitas Home</span>
       </div>
+      <nav class="menu">
+        <a href="../../index.html">Inicio</a>
+        <a href="../nosotros/nosotros.html">Nosotros</a>
+        <a href="../adopta/adopta.html">Adopta</a>
+        <button id="link-login" class="btn-cerrar-sesion" style="display: none;" onclick="window.location.href='../login/login.html'">Iniciar sesión</button>
+        <button id="cerrarSesion" class="btn-cerrar-sesion" style="display: none;">Cerrar sesión</button>
+      </nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
 
-      <label for="fechaVisita">Fecha de visita a la fundación:</label>
-      <input type="date" id="fechaVisita" required>
+  <!-- FORMULARIO CENTRADO -->
+  <main class="main-formulario">
+<div class="contenedor-formulario">
+  <form>
+    <h2>Solicitud de Visita o Adopción</h2>
+      <form action="#" method="POST">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
 
-      <button type="submit" class="btn-enviar">Enviar solicitud</button>
-    </form>
-  </div>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
 
-  <script type="module" src="form.js"></script>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="direccion">¿Dónde vives?</label>
+        <input type="text" id="direccion" name="direccion" required />
+
+        <label>¿Primera vez adoptando una mascota?</label>
+        <label><input type="radio" name="primera" value="si" /> Sí</label>
+        <label><input type="radio" name="primera" value="no" /> No</label>
+
+        <label for="fecha">Fecha de visita a la fundación:</label>
+        <input type="date" id="fecha" name="fecha" />
+
+           <button type="submit" class="btn-enviar">Enviar solicitud</button>
+  </form>
+</div>
+  </main>
+
+  <script type="module" src="../../parcial_2.js"></script>
 </body>
 </html>

@@ -1,7 +1,12 @@
-/* Estilos del encabezado (header) */
+/* =============================
+   Estilo del Header Unificado
+   ============================= */
 header {
-  background-color: #fff1f1;
-  padding: 15px 30px;
+  background-color: #d2f3fb;
+  padding: 12px 30px;
+}
+
+.contenedor-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,28 +15,89 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-size: 1.2em;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .logo-icono {
-  height: 40px;
   width: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-  object-fit: cover;
+  height: 40px;
 }
 
-nav a {
-  color: #333;
-  margin-left: 15px;
+.logo-texto {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #222;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: #d2f4fa;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Esto ayuda si se reduce el espacio */
+}
+
+.menu a,
+.menu button {
+  background-color: #c0e8ca;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
   text-decoration: none;
-  font-weight: 500;
+  color: #222;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* evita que se partan en dos líneas */
 }
 
-nav a:hover {
-  text-decoration: underline;
+.menu a:hover,
+.menu button:hover {
+  background-color: #a9dbb7;
 }
+
+.btn-cerrar-sesion {
+  font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #d2f3fb;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .menu.menu-activo {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+}
+
+
 
 /* Estilos de la página Adopta */
 body {

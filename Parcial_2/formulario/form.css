@@ -1,73 +1,101 @@
+/* =============================
+   Estilo General
+   ============================= */
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
-  background-color: #fff6f4;
+  background-color: #fff1f1;
+  color: #333;
 }
 
-header {
-  background-color: #ffe2e0;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-}
-
-.logo-header img {
-  height: 40px;
-  margin-right: 10px;
-}
-
+/* =============================
+   Contenedor del Formulario
+   ============================= */
 .contenedor-formulario {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  align-items: center;
+  min-height: 80vh; /* Centrado vertical */
+  padding: 20px;
 }
 
+/* =============================
+   Formulario en sí
+   ============================= */
 form {
-  background: white;
-  padding: 30px;
+  background-color: #fffdf5;
+  padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.8s ease;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================
+   Título centrado y elegante
+   ============================= */
 form h2 {
   text-align: center;
-  color: #e57373;
-  margin-bottom: 20px;
+  font-size: 2.2em;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 800;
 }
 
+/* =============================
+   Etiquetas e inputs
+   ============================= */
 label {
   display: block;
   margin-top: 15px;
   font-weight: 600;
+  font-size: 1em;
 }
 
-input, select {
+input,
+select,
+textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #e0b4b4;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
   border-radius: 6px;
-  outline: none;
+  font-family: inherit;
+  font-size: 1em;
 }
 
-input:focus, select:focus {
-  border-color: #f48fb1;
+input[type="radio"] {
+  width: auto;
+  margin-right: 6px;
 }
 
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* =============================
+   Botón
+   ============================= */
 .btn-enviar {
   margin-top: 20px;
-  background: linear-gradient(to right, #f06292, #f48fb1);
-  color: white;
+  background-color: #a8d5ba;
+  color: #222;
   border: none;
-  padding: 12px;
+  padding: 14px;
   font-weight: bold;
   width: 100%;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .btn-enviar:hover {
-  background: linear-gradient(to right, #ec407a, #f06292);
+  background-color:#a8d5ba;
 }

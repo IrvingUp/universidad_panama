@@ -1,3 +1,103 @@
+/* ====== ENCABEZADO GENERAL ====== */
+header {
+  background-color: #d2f3fb;
+  padding: 12px 20px;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+/* ====== LOGO ====== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icono {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-texto {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #222;
+}
+
+/* ====== MENÚ ====== */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.menu a,
+.menu button {
+  background-color: #c0e8ca;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #222;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.menu a:hover,
+.menu button:hover {
+  background-color: #a9dbb7;
+}
+
+/* ====== BOTÓN DE MENÚ (HAMBURGUESA) ====== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #d2f3fb;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu.menu-activo {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+
+
+
+
 body {
   background: #fff8f0;
   font-family: 'Quicksand', sans-serif;

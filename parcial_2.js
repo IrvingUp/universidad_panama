@@ -22,19 +22,18 @@ const btnVerMascotas = document.getElementById("btn-ver-mascotas");
 // Detectar si el usuario está logueado
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    // Usuario logueado
-    //const nombre = user.email.split('@')[0];
-    const nombre = user.name || user.email.split('@')[0]; // Usar displayName si está disponible
-    bienvenida.textContent = `👋 ¡Hola, ${nombre}!`;
-    linkLogin.style.display = "none";
-    cerrarSesion.style.display = "inline-block";
+    const nombre = user.displayName || user.email.split('@')[0]; // ✅ Más confiable
+    if (bienvenida) bienvenida.textContent = `👋 ¡Hola, ${nombre}!`;
+    if (linkLogin) linkLogin.style.display = "none";
+    if (cerrarSesion) cerrarSesion.style.display = "inline-block";
   } else {
-    // Usuario NO logueado
-    bienvenida.textContent = "";
-    linkLogin.style.display = "inline-block";
-    cerrarSesion.style.display = "none";
+    if (bienvenida) bienvenida.textContent = "";
+    if (linkLogin) linkLogin.style.display = "inline-block";
+    if (cerrarSesion) cerrarSesion.style.display = "none";
   }
 });
+
+
 
 // Cerrar sesión
 cerrarSesion?.addEventListener("click", () => {
@@ -59,3 +58,10 @@ if (btnVerMascotas) {
     }
   });
 }
+
+function toggleMenu() {
+  const menu = document.querySelector('nav.menu');
+  menu.classList.toggle('menu-activo');
+}
+
+window.toggleMenu = toggleMenu;
